@@ -1,4 +1,10 @@
- <?php
+<?php
+/*
+Sri Lanka vehicle number validation using php regular expressions
+Sumith Harshan
+*/
+
+
 function is_vehicle_num_valid($vehicle_number) {
     if (preg_match("/(?:[A-Z]{2,3}|(?!0*-)[0-9]{1,3})-[0-9]{4}(?<!0{4})/", $vehicle_number)) {
         return true;
